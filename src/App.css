@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:wght@300;400;600;700;800;900&family=Russo+One&family=Spartan:wght@700;800;900&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0 32px;
+  background-color: bisque;
+}
+
+main {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.expense-form {
+  width: 90%;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  align-self: start;
+  background-color: white;
+}
+
+.expense-table select {
+  font: inherit;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.amount-column div {
+  display: flex;
+}
+
+.amount-column span {
+  margin-right: 6px;
+}
+
+.arrow {
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.up-arrow {
+  margin-left: auto;
+}
+
+.up-arrow:active {
+  transform: translateY(-2px);
+}
+
+.down-arrow {
+  margin-left: 6px;
+}
+
+.down-arrow:active {
+  transform: translateY(2px);
+}
+
+.expense-table th,
+.expense-table td {
+  border: 1px solid #444;
+  text-align: left;
+  padding: 4px 8px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.input-container label {
+  font-size: 14px;
+  padding-left: 16px;
+  color: rgb(241, 136, 7);
+  font-weight: 600;
+}
+
+.input-container input {
+  height: 38px;
+  font-family: inherit;
+  outline: none;
+  border: 2px solid rgb(241, 136, 7);
+  border-radius: 50px;
+  padding-inline: 16px;
+  font-size: 16px;
+}
+
+.input-container select {
+  height: 38px;
+  font-family: inherit;
+  outline: none;
+  border: 2px solid rgb(241, 136, 7);
+  border-radius: 50px;
+  padding-inline: 16px;
+  font-size: 16px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.add-btn {
+  height: 32px;
+  font-size: 18px;
+  font-family: inherit;
+  margin-top: 8px;
+  margin-inline: auto;
+  border: 2px solid rgb(241, 136, 7);
+  background-color: rgb(241, 136, 7);
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  padding-inline: 16px;
+}
+
+.context-menu {
+  background-color: white;
+  border: 1px solid rgb(241, 136, 7);
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.context-menu div {
+  padding: 2px 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.context-menu div:hover {
+  background-color: #ddd;
+}
+
+.error {
+  position: absolute;
+  top: 70%;
+  color: red;
+  font-weight: 600;
+  font-size: 14px;
+  padding-left: 16px;
+}
+
+.clear-sort {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.title-column div {
+  display: flex;
+}
+
+.title-column span {
+  margin-right: 6px;
+}
+
+main {
+  min-height: 100vh;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.expense-tracker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  body {
+    margin-inline: 16px;
+  }
+
+  .expense-tracker {
+    flex-direction: column;
+  }
+}
